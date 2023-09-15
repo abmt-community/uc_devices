@@ -1,0 +1,180 @@
+{
+  "model_is_node": false,
+  "nodes": [
+    {
+      "name": "adxl_345",
+      "type": "class",
+      "cfg": {
+        "class": "adxl_345",
+        "prj": "uc_devices",
+        "adr": "83"
+      },
+      "pos": {
+        "x": -385,
+        "y": -376
+      },
+      "rotate": false,
+      "comment_out": false,
+      "default_values": {
+        "i2c_bus": ""
+      }
+    },
+    {
+      "name": "epd154",
+      "type": "class",
+      "cfg": {
+        "class": "epd154",
+        "prj": "uc_devices",
+        "swap_endian": true,
+        "invert_px": false
+      },
+      "pos": {
+        "x": -362,
+        "y": -258
+      },
+      "rotate": false,
+      "comment_out": false,
+      "default_values": {
+        "img": "",
+        "spi": "",
+        "cs": "",
+        "dc": "",
+        "reset": "",
+        "busy": ""
+      }
+    },
+    {
+      "name": "max31865",
+      "type": "class",
+      "cfg": {
+        "class": "max31865",
+        "prj": "uc_devices",
+        "r_ref": "429"
+      },
+      "pos": {
+        "x": -287,
+        "y": 50
+      },
+      "rotate": false,
+      "comment_out": false,
+      "default_values": {
+        "spi": "",
+        "cs": ""
+      }
+    },
+    {
+      "name": "pcf8591",
+      "type": "class",
+      "cfg": {
+        "class": "pcf8591",
+        "prj": "uc_devices",
+        "adr": "72",
+        "request_analog_data": true
+      },
+      "pos": {
+        "x": -239,
+        "y": 549
+      },
+      "rotate": false,
+      "comment_out": false,
+      "default_values": {
+        "i2c_bus": "",
+        "aout": ""
+      }
+    },
+    {
+      "name": "ssd1306",
+      "type": "class",
+      "cfg": {
+        "class": "ssd1306",
+        "prj": "uc_devices",
+        "adr": "60",
+        "contr": "255",
+        "px_threshold": "127"
+      },
+      "pos": {
+        "x": -273,
+        "y": 842
+      },
+      "rotate": false,
+      "comment_out": false,
+      "default_values": {
+        "i2c_bus": "",
+        "img": ""
+      }
+    },
+    {
+      "name": "i2c_scanner",
+      "type": "class",
+      "cfg": {
+        "class": "i2c_scanner",
+        "prj": "uc_devices",
+        "interval_s": "5"
+      },
+      "pos": {
+        "x": -328,
+        "y": -56
+      },
+      "rotate": false,
+      "comment_out": false,
+      "default_values": {
+        "i2c_bus": ""
+      }
+    },
+    {
+      "name": "mma8452",
+      "type": "class",
+      "cfg": {
+        "class": "mma8452",
+        "prj": "uc_devices",
+        "adr": "28"
+      },
+      "pos": {
+        "x": -246,
+        "y": 204
+      },
+      "rotate": false,
+      "comment_out": false,
+      "default_values": {
+        "i2c_bus": ""
+      }
+    },
+    {
+      "name": "mpu6050",
+      "type": "class",
+      "cfg": {
+        "class": "mpu6050",
+        "prj": "uc_devices",
+        "enable_magnetometer": false,
+        "use_alternate_address": false
+      },
+      "pos": {
+        "x": -254,
+        "y": 297
+      },
+      "rotate": false,
+      "comment_out": false,
+      "default_values": {
+        "i2c_bus": ""
+      }
+    },
+    {
+      "name": "soft_pwm",
+      "type": "class",
+      "cfg": {
+        "class": "soft_pwm",
+        "prj": "uc_devices",
+        "cnt_limit": "10"
+      },
+      "pos": {
+        "x": -290,
+        "y": 727
+      },
+      "rotate": false,
+      "comment_out": false,
+      "default_values": {
+        "in": ""
+      }
+    }
+  ]
+}
