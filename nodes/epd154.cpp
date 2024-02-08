@@ -2,7 +2,7 @@
  * Author: Hendrik van Arragon, 2023
  * SPDX-License-Identifier: MIT
  */
-#include "epd_154_node.h"
+#include "epd154.h"
 
 using namespace std;
 using namespace display_demo;
