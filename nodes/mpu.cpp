@@ -47,7 +47,7 @@ void mpu6050::tick(){
     	    in_i2c_bus->write_read(adr, { 117 }, who_am_i);
     	    in_i2c_bus->write_read(adr, { 117 }, who_am_i);
     	    
-    	    out_whoami = who_am_i;
+    	    //out_whoami = who_am_i;
     	    
     	    in_i2c_bus->write(adr, { 0x25, 0x0c | 0x80 });    // SLV0_ADR -> 0x0c
     	    in_i2c_bus->write(adr, { 0x26, 0x00 });           // SLV0_REG -> 0x00 (status regster)
@@ -82,7 +82,7 @@ void mpu6050::tick(){
     out_ax = data[0].value;
     out_ay = data[1].value;
     out_az = data[2].value;
-    out_temp  = data[3].value;
+    //out_temp  = data[3].value;
     out_wx   = data[4].value;
     out_wy   = data[5].value;
     out_wz   = data[6].value;

@@ -23,12 +23,9 @@ struct mpu6050{
     int16_t out_wz;
     int16_t out_mx;
     int16_t out_my;
-    int16_t out_mz;
-    int16_t out_temp;
-    
+    int16_t out_mz;    
     uint8_t adr = 0x68;
-    
-    uint32_t out_whoami = 0;
+
     
     bool init = false;
     
