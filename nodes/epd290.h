@@ -18,13 +18,12 @@ namespace uc_devices{
 struct epd290{
     
     abmt::img_bw in_img;
+    bool in_update = true;
     abmt::io::spi_ptr in_spi;
     abmt::io::opin_ptr in_cs;
     abmt::io::opin_ptr in_dc;
     abmt::io::opin_ptr in_reset;
     abmt::io::ipin_ptr in_busy;
-    
-    abmt::img_bw last_img;
     
     bool param_swap_endian = true;
     bool param_invert_px = false;

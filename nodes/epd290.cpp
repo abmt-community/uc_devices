@@ -15,6 +15,9 @@ void epd290::init(){
 
 void epd290::tick(){
     abmt::img_bw next_img = in_img;
+    if(in_update == false){
+        return;
+    }
     if(in_img.width == 296){
         next_img = in_img.rotate_90();
     }
@@ -23,21 +26,6 @@ void epd290::tick(){
         return; // wrong size;
     }
     
-    if(last_img.width != 0){
-        // not first image;
-        bool img_same = true;
-        for(int i = 0; i < last_img.data.size; i++){
-            if(last_img.data.data[i] != next_img.data.data[i]){
-                img_same = false;
-                break;
-            }   
-        }
-        if(img_same){
-            return;
-        }
-    }
-    
-    last_img = next_img;
     epd.init();
     epd.WaitUntilIdle();
     epd.SetFrameMemory_Base((const unsigned char*)next_img.data.data);
