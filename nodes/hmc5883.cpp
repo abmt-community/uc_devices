@@ -1,4 +1,4 @@
-#include "HMC5883.h"
+#include "hmc5883.h"
 
 using namespace std;
 using namespace uc_devices;
